@@ -1,7 +1,36 @@
-The RYD application let's users log reading sessions, which stores the time spent and any notes they make of the session.
+# React Electron
 
-Features so far include:
+RYD application - User's log reading sessions by providing length of the session and any notes made from it.
+<br>
+Current features:
+Register/login functionality.
+Log session, inputting details.
+View previous sessions.
 
-Log and store the session details via electron application.
-View past sessions.
-User register and login functionality.
+## Usage
+1. Clone this repository.
+```
+git clone https://github.com/willjw3/react-electron.git <your-project-name>
+```
+2. If you havent already, install Yarn globally.
+```
+npm install -g yarn
+```
+3. Navigate into project root and install dependencies.
+```
+cd <your-project-name> && npm install
+```
+4. Run dev server.
+```
+npm run start
+```
+## Deploy to Desktop
+1. Run the build process
+```
+npm run build
+```
+2. Go into your project folder using your file explorer. Navigate to the `dist` folder and open it. Then double-click `<your-project-name>` Setup 0.1.0. Your app should open and there should now be an icon on your desktop for this app.
+
+**Use a Custom Icon**
+
+Add a 256 x 256 .png or .ico image in your public folder. It should be either `icon.ico` or `icon.png`. Update the `icon` property in your `package.json` if necessary. Currently, it uses an image called `icon.png`, which is a graphic of a coffee cup. You'll only see this in production. For more info, see the [electron-builder documentation](https://www.electron.build/icons)
