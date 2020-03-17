@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TableHeader = () => {
+const SessionsTableHeader = () => {
     return (
         <thead>
             <tr>
@@ -13,7 +13,7 @@ const TableHeader = () => {
     );
 }
 
-const TableBody = props => {
+const SessionsTableBody = props => {
     const rows = props.characterData.map((row, index) => {
         return (
             <tr key={index}>
@@ -28,17 +28,17 @@ const TableBody = props => {
     return <tbody>{rows}</tbody>
 }
 
-class Table extends React.Component {
+class SessionsTable extends React.Component {
     render() {
         const { characterData } = this.props;
 
         return (
             <table>
-                <TableHeader />
-                <TableBody characterData={characterData} />
+                <SessionsTableHeader />
+                <SessionsTableBody characterData={characterData} />
             </table>
         );
     }
 }
 
-export default Table
+export default SessionsTable
