@@ -1,7 +1,7 @@
 {
   "name": "ryd",
   "version": "0.1.0",
-  "description": "Simple boilerplate for developing an Electron app with React",
+  "description": "RYD application to log reading sessions.",
   "author": "Marshf16",
   "build": {
     "appId": "react.electron",
@@ -23,8 +23,6 @@
   "scripts": {
     "start-react": "react-scripts start",
     "build-react": "react-scripts build",
-    "test-react": "react-scripts test --env=jsdom",
-    "eject-react": "react-scripts eject",
     "build-electron": "electron-builder",
     "build": "npm run build-react && npm run build-electron",
     "start": "concurrently \"cross-env BROWSER=none npm run start-react\" \"wait-on http://localhost:3000 && electron .\""
