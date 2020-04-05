@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom"
-import logo from './logo.svg';
+import logo from './book.png';
 import './Home.css';
 import SessionsTable from './components/SessionsTable';
 
@@ -32,6 +32,10 @@ const Home = () => {
         <p>RYD Application</p>
         <img src={logo} className="Home-logo" alt="logo" />
         <Link className="Home-link" to="/Profile">Link to your Profile Page</Link>
+
+        <button>
+          Log Session
+        </button>
 
         <br/>
         <SessionsTable characterData={data} />

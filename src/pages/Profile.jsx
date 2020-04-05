@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "react-router-dom"
-import Logo from "../logo.svg"
+import Logo from "../book.png"
 import "../Home.css"
 import UserTable from "../components/UserTable"
 
